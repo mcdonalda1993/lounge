@@ -5,5 +5,5 @@ cat << EOF
 addons:
   
 default_process_types:
-  web: bin/node server.js
+  web: lounge start start --private
 EOF

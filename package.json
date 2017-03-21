@@ -1,0 +1,17 @@
+{
+  "name": "thelounge",
+  "description": "The self-hosted Web IRC client",
+  "preferGlobal": true,
+  "bin": {
+    "lounge": "index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/thelounge/lounge.git"
+  },
+  "homepage": "https://thelounge.github.io/",
+  "license": "MIT",
+  "engines": {
+    "node": ">=4.2.0"
+  }
+}
