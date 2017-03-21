@@ -8,4 +8,4 @@ USER=$(<$3/USER)
 PASSWORD=$(<$3/PASSWORD)
 
 echo "-----> Adding user, $USER"
-echo $PASSWORD | lounge add $USER 
+echo -ne "$PASSWORD\r\n" | lounge add $USER
