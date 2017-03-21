@@ -1,1 +1,1 @@
-web: lounge start start --private
+web: lounge start start --private --port $PORT
