@@ -2,6 +2,10 @@
 
 npm install -g thelounge
 
+echo "-----> Environment variables"
 ls $3
+USER=$(<$3/USER)
+PASSWORD=$(<$3/PASSWORD)
+
 echo "-----> Adding user, $USER"
 echo $PASSWORD | lounge add $USER 
