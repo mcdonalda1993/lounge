@@ -2,4 +2,6 @@
 
 npm install -g thelounge
 
+ls $3
+echo "-----> Adding user, $USER"
 echo $PASSWORD | lounge add $USER 

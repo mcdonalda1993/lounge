@@ -1,3 +1,13 @@
 #!/bin/bash
 
-exit 0
+if which node > /dev/null
+then
+    # add deb.nodesource repo commands 
+    # install node
+    echo "-----> node is not installed, make sure the node buildpack is set"
+    echo "       heroku buildpacks:add --index 1 heroku/nodejs"
+    echo "       and there is a skeleton package.json"
+else
+    echo "-----> node is installed..."
+    exit 0
+fi
