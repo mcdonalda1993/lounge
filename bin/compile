@@ -5,7 +5,6 @@ npm install -g thelounge
 echo "-----> Environment variables"
 ls $3
 USER=$(<$3/USER)
-PASSWORD=$(<$3/PASSWORD)
 
 echo "-----> Adding user, $USER"
-echo -ne "$PASSWORD\r\n" | lounge add $USER
+mv ~/$USER.json /app/.lounge/users/$USER.json

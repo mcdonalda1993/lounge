@@ -5,5 +5,5 @@ cat << EOF
 addons:
   
 default_process_types:
-  web: lounge start start --private
+  web: lounge start start --private --port $PORT
 EOF

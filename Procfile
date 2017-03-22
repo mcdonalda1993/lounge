@@ -1,1 +1,1 @@
-web: node /app/.heroku/node/lib/node_modules/thelounge/index.js start --port $PORT
+web: node /app/.heroku/node/lib/node_modules/thelounge/index.js start --private --port $PORT
